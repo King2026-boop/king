@@ -1,0 +1,13 @@
+Download
+{
+  "log": { "level": "info" },
+  "inbounds": [{
+    "type": "vless",
+    "tag": "vless-in",
+    "listen": "::",
+    "listen_port": 8080,
+    "users": [{ "uuid": "d568e49b-99c9-43c4-92c7-7ac4c616f9e8" }],
+    "transport": { "type": "ws", "path": "/chat" }
+  }],
+  "outbounds": [{ "type": "direct", "tag": "direct" }]
+}
